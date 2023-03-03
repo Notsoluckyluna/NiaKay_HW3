@@ -10,6 +10,9 @@ ScriptsOnlyBuild:
     - OVRConfig
     - OVRProjectConfig
     Oculus.VR.dll:
+    - OVRCameraRig
+    - OVRHeadsetEmulator
+    - OVRManager
     - OVRRuntimeSettings
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputActionAsset
@@ -106,6 +109,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2012}
     - Class: 114
+      Script: {instanceID: 2214}
+    - Class: 114
       Script: {instanceID: 3672}
     - Class: 114
       Script: {instanceID: 4398}
@@ -118,25 +123,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7756}
     - Class: 114
-      Script: {instanceID: 8780}
+      Script: {instanceID: 8778}
     - Class: 114
-      Script: {instanceID: 9156}
+      Script: {instanceID: 9154}
     - Class: 114
-      Script: {instanceID: 9160}
+      Script: {instanceID: 9158}
     - Class: 114
-      Script: {instanceID: 9534}
+      Script: {instanceID: 9444}
     - Class: 114
-      Script: {instanceID: 10060}
+      Script: {instanceID: 9532}
     - Class: 114
-      Script: {instanceID: 10730}
+      Script: {instanceID: 10058}
     - Class: 114
-      Script: {instanceID: 11278}
+      Script: {instanceID: 10324}
     - Class: 114
-      Script: {instanceID: 11632}
+      Script: {instanceID: 10728}
     - Class: 114
-      Script: {instanceID: 12120}
+      Script: {instanceID: 11276}
     - Class: 114
-      Script: {instanceID: 12652}
+      Script: {instanceID: 11630}
+    - Class: 114
+      Script: {instanceID: 12118}
+    - Class: 114
+      Script: {instanceID: 12650}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 137
@@ -4759,4 +4768,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/SimpleNaturePack/Scenes/SimpleNaturePack_Demo.unity
-  playerPath: C:/Users/kaylu/Desktop/pa02_test10.apk
+  playerPath: C:/Users/kaylu/Desktop/pa02_test11.apk
