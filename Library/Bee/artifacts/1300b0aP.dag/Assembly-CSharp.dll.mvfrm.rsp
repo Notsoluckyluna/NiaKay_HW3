@@ -1,3 +1,4 @@
+Library\Bee\artifacts\mvdfrm\Unity.InputSystem.ref.dll_A6FF0182FCD80C46.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Services.Core.Analytics.ref.dll_B6B3928F42109E44.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Services.Core.Environments.ref.dll_9371070AEE137978.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Services.Core.ref.dll_FF91F9BC6398EB7C.mvfrm
@@ -6,6 +7,8 @@ Library\Bee\artifacts\mvdfrm\Unity.Timeline.ref.dll_08E11C037DD39E3A.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.Core.ref.dll_0FD4FE2CDCC99BDF.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.Flow.ref.dll_56E5DE835ED3108E.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.State.ref.dll_A70CD23EFCFC9D47.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.XR.CoreUtils.ref.dll_A353C602C700ED67.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.XR.Interaction.Toolkit.ref.dll_B6018A029E4CC2A7.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.XR.Management.ref.dll_2CC2F0B9CB7419B4.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.XR.Oculus.ref.dll_539ED506E8354E7A.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.SpatialTracking.ref.dll_E3484C16F227CFFA.mvfrm

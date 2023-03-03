@@ -13589,52 +13589,58 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerControls_Update_m1FB8C4FBC7768E727
 		float L_1;
 		L_1 = Input_GetAxis_m10372E6C5FF591668D2DC5F58C58D213CC598A62(_stringLiteral265E15F1F86F1C766555899D5771CF29055DE75A, NULL);
 		V_1 = L_1;
+		// Vector3 direction = new Vector3(horizontalInput, 0f, verticalInput);
+		float L_2 = V_0;
+		float L_3 = V_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
+		memset((&L_4), 0, sizeof(L_4));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_4), L_2, (0.0f), L_3, /*hidden argument*/NULL);
 		// rb.velocity = new Vector3(horizontalInput * movementSpeed, rb.velocity.y, verticalInput * movementSpeed);
-		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_2 = __this->___rb_4;
-		float L_3 = V_0;
-		float L_4 = __this->___movementSpeed_5;
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_5 = __this->___rb_4;
+		float L_6 = V_0;
+		float L_7 = __this->___movementSpeed_5;
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_8 = __this->___rb_4;
+		NullCheck(L_8);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
+		L_9 = Rigidbody_get_velocity_mAE331303E7214402C93E2183D0AA1198F425F843(L_8, NULL);
+		float L_10 = L_9.___y_3;
+		float L_11 = V_1;
+		float L_12 = __this->___movementSpeed_5;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13;
+		memset((&L_13), 0, sizeof(L_13));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_13), ((float)il2cpp_codegen_multiply(L_6, L_7)), L_10, ((float)il2cpp_codegen_multiply(L_11, L_12)), /*hidden argument*/NULL);
 		NullCheck(L_5);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
-		L_6 = Rigidbody_get_velocity_mAE331303E7214402C93E2183D0AA1198F425F843(L_5, NULL);
-		float L_7 = L_6.___y_3;
-		float L_8 = V_1;
-		float L_9 = __this->___movementSpeed_5;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
-		memset((&L_10), 0, sizeof(L_10));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_10), ((float)il2cpp_codegen_multiply(L_3, L_4)), L_7, ((float)il2cpp_codegen_multiply(L_8, L_9)), /*hidden argument*/NULL);
-		NullCheck(L_2);
-		Rigidbody_set_velocity_mE4031DF1C2C1CCE889F2AC9D8871D83795BB0D62(L_2, L_10, NULL);
+		Rigidbody_set_velocity_mE4031DF1C2C1CCE889F2AC9D8871D83795BB0D62(L_5, L_13, NULL);
 		// if (Input.GetKeyDown("Jump"))
-		bool L_11;
-		L_11 = Input_GetKeyDown_m789DB780D0567DCC23B501D15AABD4F2E3591A3F(_stringLiteral70253F929BCE7F81DF1A5A1C0900BED744E86C9C, NULL);
-		if (!L_11)
+		bool L_14;
+		L_14 = Input_GetKeyDown_m789DB780D0567DCC23B501D15AABD4F2E3591A3F(_stringLiteral70253F929BCE7F81DF1A5A1C0900BED744E86C9C, NULL);
+		if (!L_14)
 		{
-			goto IL_0088;
+			goto IL_0095;
 		}
 	}
 	{
 		// rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
-		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_12 = __this->___rb_4;
-		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_13 = __this->___rb_4;
-		NullCheck(L_13);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
-		L_14 = Rigidbody_get_velocity_mAE331303E7214402C93E2183D0AA1198F425F843(L_13, NULL);
-		float L_15 = L_14.___x_2;
-		float L_16 = __this->___jumpForce_6;
-		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_17 = __this->___rb_4;
-		NullCheck(L_17);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18;
-		L_18 = Rigidbody_get_velocity_mAE331303E7214402C93E2183D0AA1198F425F843(L_17, NULL);
-		float L_19 = L_18.___z_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20;
-		memset((&L_20), 0, sizeof(L_20));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_20), L_15, L_16, L_19, /*hidden argument*/NULL);
-		NullCheck(L_12);
-		Rigidbody_set_velocity_mE4031DF1C2C1CCE889F2AC9D8871D83795BB0D62(L_12, L_20, NULL);
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_15 = __this->___rb_4;
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_16 = __this->___rb_4;
+		NullCheck(L_16);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17;
+		L_17 = Rigidbody_get_velocity_mAE331303E7214402C93E2183D0AA1198F425F843(L_16, NULL);
+		float L_18 = L_17.___x_2;
+		float L_19 = __this->___jumpForce_6;
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_20 = __this->___rb_4;
+		NullCheck(L_20);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21;
+		L_21 = Rigidbody_get_velocity_mAE331303E7214402C93E2183D0AA1198F425F843(L_20, NULL);
+		float L_22 = L_21.___z_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23;
+		memset((&L_23), 0, sizeof(L_23));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_23), L_18, L_19, L_22, /*hidden argument*/NULL);
+		NullCheck(L_15);
+		Rigidbody_set_velocity_mE4031DF1C2C1CCE889F2AC9D8871D83795BB0D62(L_15, L_23, NULL);
 	}
 
-IL_0088:
+IL_0095:
 	{
 		// }
 		return;
